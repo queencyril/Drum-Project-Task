@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drum Machine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="drum-machine">
+    <div class="pad-bank">
+      <button class="drum-pad" id="Heater-1">Q
+        <audio class="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Heater-2">W
+        <audio class="clip" id="W" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Heater-3">E
+        <audio class="clip" id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Heater-4">A
+        <audio class="clip" id="A" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Clap">S
+        <audio class="clip" id="S" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Open-HH">D
+        <audio class="clip" id="D" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Kick-n'-Hat">Z
+        <audio class="clip" id="Z" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Kick">X
+        <audio class="clip" id="X" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
+      </button>
+      <button class="drum-pad" id="Closed-HH">C
+        <audio class="clip" id="C" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
+      </button>
+    </div>
+
+    <div class="controls">
+      <div class="toggle">
+        <p>Power</p>
+        <div class="switch" id="power-switch"></div>
+      </div>
+      <div id="display">Heater Kit</div>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+      <div class="toggle">
+        <p>Bank</p>
+        <div class="switch" id="bank-switch"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
