@@ -19,7 +19,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Grid for drum pads */
 .pad-bank {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,7 +43,6 @@ body {
   transform: scale(0.95);
 }
 
-/* Controls section */
 .controls {
   text-align: center;
   display: flex;
@@ -104,7 +102,6 @@ input[type="range"] {
   left: 28px;
 }
 
-/* --- Layout for large screens --- */
 @media screen and (min-width: 768px) {
   #drum-machine {
     flex-direction: row;
