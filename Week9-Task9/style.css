@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 #drum-machine {
@@ -15,8 +16,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Grid for drum pads */
 .pad-bank {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -38,12 +41,15 @@ body {
 }
 
 .drum-pad:active {
-  background: #F7AEF8;
   transform: scale(0.95);
 }
 
+/* Controls section */
 .controls {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #display {
@@ -59,6 +65,7 @@ body {
 input[type="range"] {
   width: 150px;
   cursor: pointer;
+  accent-color: #8093F1;
 }
 
 .toggle {
@@ -95,4 +102,30 @@ input[type="range"] {
 
 .switch.active::after {
   left: 28px;
+}
+
+/* --- Layout for large screens --- */
+@media screen and (min-width: 768px) {
+  #drum-machine {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+  }
+
+  .pad-bank {
+    margin-bottom: 0;
+  }
+
+  .controls {
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+  }
+
+  #display {
+    width: 200px;
+    font-size: 1rem;
+  }
 }
